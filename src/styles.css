@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(150deg, rgb(13, 139, 139), rgb(215, 255, 255) );
+  height: 100%;
+}
+
+.containerUser-form{
+  background: rgb(255, 255, 255);
+  width: 85%;
+  padding-bottom: 30px;
+  border-radius: 0 0 11px 11px;
+  box-shadow: 0 4px 15px rgb(0, 0, 0, .5 );
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0px;
+}
+
+.title-form{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 28px 10px 10px 10px;
+  color: rgb(0, 43, 122);
+  font-size:xx-large;
+}
+
+.form-user div{
+  margin: 12px 0;
+}
+
+.form-user div input{
+  background: rgb(237, 237, 237);
+  border: none;
+  height: 35px;
+  width: 260px;
+  border-radius:80px;
+  padding: 0 18px;
+  outline: none;
+}
+
+.form-user div label{
+  padding: 8px;  
+}
+
+.form-user div label i{
+  font-size: 20px;
+}
+
+
+.form-user button{
+  border: none;
+  border-radius: 80px;
+  padding: 8px ;
+  width: 80px;
+  margin: 10px 5px 0 5px;
+  color: white;
+  background: rgb(47, 82, 134);
+}
+
+.form-user button:hover{
+  
+  background: rgb(29, 61, 107);
+}
+
+.container-name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 83.5px;
+}
+
+.container-name i{
+  font-size: 20px;
+}
+
+.name-complete div label{
+  padding: 4px;
+}
+
+.name-complete div label{
+  padding: 4px;
+}
+
+.title-users{
+  visibility: hidden;
+}
+
+.list-users{
+  display: flex;
+  flex-direction: column-reverse;
+  list-style: none;
+}
+
+.list-users li{
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: repeat(3, 28px);
+  background: rgb(255, 255, 255, .85);
+  margin: 10px 0;
+  padding: 12px 25px;
+  width: 70vw;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgb(0, 0, 0, .4);  
+}
+
+.list-users h3{
+  grid-column: 1 / 3;
+  color: rgb(0, 43, 122);
+}
+
+.list-users button{
+  background: none;
+  border: none;
+}
+
+.container-pass{
+  display: none;
+}
+
+.container-mail{
+  grid-column: 1 / 2;
+  justify-self: start;
+  align-self: center;
+}
+
+.container-birthday{
+  grid-column: 1 / 2;
+  justify-self: start;
+  align-self: center;
+}
+
+.button-edit{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-size: 16px;
+}
+
+.button-delete{
+  grid-column: 2 / 3;
+  color: rgb(209, 0, 0);
+  font-size: 16px;
+}
+
+@media only screen and ( min-width: 600px ){
+  .App {
+    display: grid;
+    grid-template-columns: 360px auto;
+    height: 100%;
+  }
+
+  .containerUser-form{
+    display: flex;
+    padding-bottom: 30px;
+    border-radius: 0;
+    box-shadow: 0 4px 15px rgb(0, 0, 0, .5 );
+    height: 100%;
+    justify-content: center;
+    width: auto;
+    margin: 0;
+    
+  }
+
+  .containerUsers-list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
+    align-self: flex-start;
+  }
+
+  .list-users li{
+    width: 85vh;
+    margin: 10px 0px;
+  }
+
+  .form-user {
+    position: sticky;
+    top: 0px;
+    height: 400px;
+  }
+}
